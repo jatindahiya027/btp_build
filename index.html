@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | LNMIIT_virtual_tour</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=1346 height=640 style="width: 1346px; height: 640px; background: #231F20"></canvas>
+    <script src="Build/btpbuild.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/btpbuild.data",
+        frameworkUrl: "Build/btpbuild.framework.js",
+        codeUrl: "Build/btpbuild.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "BTP_Project",
+        productName: "LNMIIT_virtual_tour",
+        productVersion: "0.1",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
